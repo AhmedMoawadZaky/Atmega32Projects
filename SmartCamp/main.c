@@ -175,7 +175,7 @@ void EnableCTCModeInTimer0(){
 
 	OCR0=255;
 
-	//Time =(8000000/(255(OCR0)*1024(prescaler)))=125
+	//Time =((255(OCR0)*1024(prescaler))/8000000/)=0.03264
 	//enable global interrupt
 	SetBit(SREG,7);
 
